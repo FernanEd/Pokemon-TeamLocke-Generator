@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokémon TeamLocke Generator</title>
+</head>
+<body onload="endLoading()">
+    <section id="loading">
+
+    </section>
+    <main>
+    <section class="sidepage"><div></div></section>
+        <section id="mainpage" style="display: none;">
+            <header>
+                <h1 id="main-title">Pokémon TeamLocke Generator</h1>
+                <h2 id="main-msg">Make a playthrough using...</h2>
+            </header>
+            <div id="poketeam-container">
+                <div id="poke-1" class="poke-container">
+                    <img class="poke-img" src="" alt="">
+                    <p class="poke-desc">Name</p>
+                </div>
+                <div id="poke-2" class="poke-container">
+                    <img class="poke-img" src="" alt="">
+                    <p class="poke-desc">Name</p>
+                </div>
+                <div id="poke-3" class="poke-container">
+                    <img class="poke-img" src="" alt="">
+                    <p class="poke-desc">Name</p>
+                </div>
+                <div id="poke-4" class="poke-container">
+                    <img class="poke-img" src="" alt="">
+                    <p class="poke-desc">Name</p>
+                </div>
+                <div id="poke-5" class="poke-container">
+                    <img class="poke-img" src="" alt="">
+                    <p class="poke-desc">Name</p>
+                </div>
+                <div id="poke-6" class="poke-container">
+                    <img class="poke-img" src="" alt="">
+                    <p class="poke-desc">Name</p>
+                </div>
+            </div>
+            <div id="poketeam-controls">
+                <select name="generate-picker" id="generate-picker">
+                    <option value="0" selected>Pick a gen</option>
+                    <option value="1">Generation I</option>
+                    <option value="2">Generation II</option>
+                    <option value="3">Generation III</option>
+                    <option value="4">Generation IV</option>
+                    <option value="5">Generation V</option>
+                    <option value="6">Generation VI</option>
+                    <option value="7">Generation VII</option>
+                </select>
+                <button id="generate-btn" class="btn" type="button" onclick="generateTeam()">Generate Team</button>
+            </div>
+            <footer>
+                <p>Made by <a href="">Fernando Ed BM</a>. 2020</p>
+            </footer>
+        </section>
+        <section class="sidepage"><div></div></section>
+    </main>
+    <script src="mainscript.js"></script>
+</body>
+</html>
+

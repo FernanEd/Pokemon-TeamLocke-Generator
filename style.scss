@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+$primary-color :#20a0ee;
+$primary-highlight : #20ceff;
+$mainbg-color: #efefff;
+
+html, body
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+body
+{
+    background-color: $mainbg-color;
+}
+
+#mainpage{
+    padding: 10%;
+    width: 80%;
+
+    header, footer
+    {
+        text-align: center;
+    }
+    header h1
+    {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+    footer
+    {
+        margin: 40px 0px;
+    }
+}
+
+a
+{
+    text-decoration: none;
+    color: $primary-color;
+    &:hover
+    {
+        color: $primary-highlight;
+    }
+}
+
+
+#poketeam-container
+{
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid blue;
+    margin: 40px 0px;
+    
+    .poke-container
+    {
+        display: inline-flexbox;
+        flex-direction: column;
+        align-self: flex-end;
+        flex: 1;
+        //border: 1px solid green;
+        text-align: center;
+
+        img
+        {
+            min-width: 7vw;
+            max-width: 7vw;
+    
+            min-width: 7vw;
+            max-width: 7vw;
+            //border: 1px solid red;
+        }
+    }
+}
+
+
+#poketeam-controls{
+    text-align: center;
+}
+
+
+.btn{
+    padding: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background-color: $primary-color ;
+    color: white;
+    border: 0;
+
+    &:hover
+    {
+        cursor: pointer;
+        background-color: $primary-highlight;
+    }
+}
+
+
+select{
+    padding: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    option
+    {
+        text-transform: uppercase;
+    }
+}
+
+.sidepage{
+    //background: url(images/pokeval-white.svg), linear-gradient(rgb(71, 99, 138), rgba(30,100,200,1));
+    background: url(images/pokeval.svg), rgba(71, 99, 138,0.6);
+    background-size: 38px;
+    background-blend-mode: color;
+    width: 20%;
+    div{
+        //background: url(images/pokeval-white.svg), linear-gradient(rgb(71, 99, 138), rgba(30,100,200,1));
+        background: linear-gradient(rgba(71, 99, 138, 0.4), rgba(30,100,200, 1));
+        width: 100%;
+        height: 100%;
+    }
+}
+
+main{
+    display: flex;
+    width: 100%;
+    min-height: 1000px;
+}
